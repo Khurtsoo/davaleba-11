@@ -2,7 +2,7 @@ body  {
     height: 1000px;
 }
 
-ul {
+.container-1 {
     @include something;
 }
 
@@ -26,7 +26,7 @@ ul {
 	width: 43px;
 	height: 43px;
 	display: inline-block;
-	margin-left: 330px;
+	margin-left: 550px;
 	margin-top: -20px;
 }
 
@@ -34,4 +34,120 @@ h1 {
     @include something-2;
     margin-left: 50px;
     margin-top: 30px;
+}
+
+div.parent-relative {
+	position: relative;
+	width: 362px;
+	height: 357px;
+	top: 30px;
+	margin-left: 10px;
+}
+p.child-absolute {
+	position: absolute;
+	top: 32px;
+	left: 42px;
+	color: #FFFFFF;
+	z-index: 5;
+}
+p.kid-absolute {
+	position: absolute;
+	color: #FFFFFF;
+	margin-top: -142px;
+	margin-left: 42px;
+}
+.tag-1 {
+	background: #FFFFFF;
+}
+.tag-2 {
+	@include something-3;
+} 
+.picture-2 {
+	
+	margin-top: 40px;
+	margin-left: 20px;
+}
+.tag-3 {
+	margin-left: 10px;
+	color: #8A8787;
+	display: inline-block;
+}
+.container {
+	display: flex;
+	justify-content: space-around;
+    align-items: center;
+}
+
+h2 {
+	@include something-4;
+}
+
+.some1, .some2 {
+	/*	display: inline-block;*/
+	margin-bottom: 20px;
+		
+}
+.kid8-absolute {
+	position: absolute;
+    bottom: 20px;
+    left: 290px;
+}
+.something {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 100px;
+}
+.room {
+	display: inline-block;
+	vertical-align: middle;
+	height: 900px;
+
+}
+.room img {
+	display: block;
+	margin-bottom: 120px;
+}
+
+.game-position-relative {
+	position: relative;
+	width: 1440px;
+	height: 201px;
+	background: #243043;
+}
+.children19-absolute {
+	position: absolute;
+	width: 38px;
+	height: 40px;
+	margin-left: 1150px;
+	margin-top: 70px;
+}
+.toy {
+	display: flex;
+	flex-direction: column;
+    width: 100px;
+	position: absolute;
+    top: 40px;
+    left: 70px;
+}
+li {
+	color: #000000;
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.toy_2 {
+	width: 30px;
+    margin-top: -15px;
+    margin-left: 150px;
+	color: #818687;
+}
+.toy_3 {
+	width: 30px;
+	margin-left: 300px;
+    margin-top: -140px;
+}
+.toy_5 {
+	margin-left: 550px;
+    margin-top: -60px;
+    color: #FFFFFF;
 }
